@@ -13,7 +13,7 @@ function getParameterByName(name) {
   var $email = document.querySelectorAll('#signup-form #email')[0];
   var $message = document.querySelectorAll('#signup-form #message')[0];
   $email.value = getParameterByName('email');
-
+  $message.style.visibility = 'hidden';
   $message._show = function(success, text) {
     $message.innerHTML = text;
     if (success) {
